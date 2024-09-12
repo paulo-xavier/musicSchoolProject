@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+header {
+    background-color:#9423c7;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    height: 100px;
+    
+    padding: 50px;
+
+}
+
+header img {
+    height: 100px;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+    color: white;
+    transition: all .2s;
+}
+
+
+#hamburguer-menu {
+    height: 40px;
+    display: none;
+}
+
+
+ul.removed {
+    display: none;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#nav-bar {
+    flex-direction: row;
+}
+
+@media (max-width: 571px) {
+    header {
+        flex-direction: column;
+        height: 300px;
+        padding: 40px;
+    }
+    #hamburguer-menu{
+        display: block;
+    }
+
+    header img {
+        height: 140px;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+
+
+
+

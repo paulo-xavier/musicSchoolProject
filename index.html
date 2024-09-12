@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    
+    <title>MusicSchool</title>
+</head>
+<body>
+
+    <header>
+
+        <img src="./assets/images/logo.png" alt="MusicDot logo">
+        
+        
+        <div class="container-info">
+            <img src="./assets/images/hamburguer-menu.png" alt="" id="hamburguer-menu">
+            <ul class="" id="nav-bar">
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+                <li>
+                    <a href="#">Enroll now</a>
+                </li>
+            </ul>
+        </div>
+
+        
+    </header>
+
+
+    <script>
+        
+        var hamburguerMenu = document.getElementById('hamburguer-menu');
+
+        hamburguerMenu.addEventListener('click', () => {
+            
+            var navBar = document.getElementById('nav-bar');
+        
+            if  (navBar.classList.contains('removed')){
+
+
+                navBar.classList.remove('removed');
+                navBar.style.flexDirection = 'column'
+            
+            } else {
+                
+                navBar.classList.add('removed');
+            }
+
+            
+        })
+
+
+    </script>
+    
+</body>
+</html>
