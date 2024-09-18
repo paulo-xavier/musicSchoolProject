@@ -53,6 +53,19 @@ ul.removed {
     flex-direction: row;
 }
 
+
+
+/* Home */
+
+.home {
+    background-color: darkblue;
+    height: 90vh;
+}
+
+
+
+
+
 @media (max-width: 571px) {
     header {
         flex-direction: column;
